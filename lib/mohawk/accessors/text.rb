@@ -20,7 +20,10 @@ module Mohawk
 
       def enter(text)
         text_window = @adapter.window.child(:hwnd => @text.hwnd)
-        text_window.send_keys text.split(//)
+        text.split(//).each do |key|
+          text_window.send_keys key
+          sleep 0.1
+        end
       end
     end
   end
