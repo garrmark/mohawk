@@ -1,0 +1,9 @@
+﻿<Application x:Class="TelerikWpfApp.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:sampleData="clr-namespace:TelerikWpfApp"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <sampleData:GridViewSampleData x:Key="DataSource" />
+    </Application.Resources>
+</Application>

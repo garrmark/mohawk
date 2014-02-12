@@ -1,0 +1,11 @@
+﻿<Window x:Class="TelerikWpfApp.MainWindow"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <telerik:RadGridView x:Name="radGridView" IsReadOnly="True" SelectionMode="Single" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Parts}"
+                             MouseDoubleClick="RadGridView_OnMouseDoubleClick">
+        </telerik:RadGridView>
+    </Grid>
+</Window>
