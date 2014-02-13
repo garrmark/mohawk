@@ -8,8 +8,6 @@ World(Mohawk::Navigation)
 
 require_rel 'screens'
 
-Mohawk.app_path = 'features/support/WindowsForms.exe'
-
 Mohawk::Navigation.routes = {
   :default => [
     [MainScreen, :about],
@@ -24,7 +22,13 @@ AfterConfiguration do |config|
   ENV['MOHAWK_ADAPTER']
 end
 
-Before do
+Before('~@wpf') do
+  Mohawk.app_path = 'features/support/WindowsForms.exe'
+  Mohawk.start
+end
+
+Before('@wpf') do
+  Mohawk.app_path = 'features/support/wpf_app_exe/TelerikWpfApp.exe'
   Mohawk.start
 end
 
