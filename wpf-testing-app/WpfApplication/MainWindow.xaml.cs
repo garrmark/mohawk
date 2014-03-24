@@ -28,7 +28,7 @@ namespace WpfApplication
         private void OnMouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             var part = dataGrid.SelectedItem as Part;
-            MessageBox.Show("Selected Part: " + part.PartId);
+            MessageBox.Show("Selected Part: " + part.PartId,"Selected Part");
         }
     }
 }

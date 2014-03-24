@@ -14,3 +14,12 @@ end
 When(/^we (select|clear) the WPF grid row with the following information:$/) do |select_or_clear, table|
   on(WpfGrid).send("#{select_or_clear}_parts", table.hashes.first)
 end
+
+
+When(/^we double click on a WPF grid row value "([^"]*)"$/) do |arg|
+  pending
+end
+
+Then(/^a dialog box should show with the part "([^"]*)"$/) do |arg|
+  on(MessageBox).part.should equal arg
+end

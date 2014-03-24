@@ -17,4 +17,4 @@ Feature: Working with WPF DataGrid
 
   Scenario: Double click a row
     When we double click on a WPF grid row value "ZZ34334"
-    Then a dialog box should show with the part id
+    Then a dialog box should show with the part "ZZ34334"
