@@ -7,7 +7,7 @@ Feature: Working with WPF DataGrid
 
   Scenario: Selecting a row by value
     When we select the WPF grid row with the value "ZZ34334"
-    Then the WPF grid row with index "1" should be selected
+    Then the WPF grid row with index "2" should be selected
 
   Scenario: Selecting a row by matching cell information
     When we select the WPF grid row with the following information:

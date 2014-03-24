@@ -8,7 +8,7 @@ Then /^the WPF grid row with index "(.*?)" should (not )?be selected$/ do |which
 end
 
 When(/^we select the WPF grid row with the value "([^"]*)"$/) do |row_value|
-  on(WpfGrid).parts = row_value
+  on(WpfGrid).select_parts partid: row_value
 end
 
 When(/^we (select|clear) the WPF grid row with the following information:$/) do |select_or_clear, table|
