@@ -11,8 +11,8 @@ Feature: Working with WPF DataGrid
 
   Scenario: Selecting a row by matching cell information
     When we select the WPF grid row with the following information:
-      | partid     | description | quantity |
-      | XX123 | Test Part 1      | 5         |
+      | partid | description | quantity |
+      | XX123  | Test Part 1 | 5        |
     Then the row with index "1" should be selected
 
   Scenario: Double click a row
