@@ -1,5 +1,6 @@
 class WpfGrid
   include Mohawk
+  window(:title => /MainWindow/)
 
-  table(:parts, id: 'radGridView')
+  table(:parts, id: 'dataGrid')
 end

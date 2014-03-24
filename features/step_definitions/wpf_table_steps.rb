@@ -7,6 +7,10 @@ Then /^the WPF grid row with index "(.*?)" should (not )?be selected$/ do |which
   on(WpfGrid).parts[which_row.to_i].send(should_or_should_not, be_selected)
 end
 
-When(/^we select the WPF grid row with the value "([^"]*)"$/) do |arg|
-  on(DataEntryForm).parts = row_value
+When(/^we select the WPF grid row with the value "([^"]*)"$/) do |row_value|
+  on(WpfGrid).parts = row_value
+end
+
+When(/^we (select|clear) the WPF grid row with the following information:$/) do |select_or_clear, table|
+  on(WpfGrid).send("#{select_or_clear}_parts", table.hashes.first)
 end
