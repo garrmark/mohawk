@@ -1,5 +1,5 @@
-@wpf
-Feature: Working with WPF DataGrid
+@telerik
+Feature: Working with Telerik RadGridView tables in WPF
 
   Scenario: Selecting a row by index
     When we select the WPF grid row with index "1"

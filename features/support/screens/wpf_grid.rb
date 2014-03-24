@@ -1,4 +1,4 @@
-class TelerikWpfGrid
+class WpfGrid
   include Mohawk
 
   table(:parts, id: 'radGridView')

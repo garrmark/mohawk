@@ -4,7 +4,7 @@
                 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
                 Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <telerik:RadGridView x:Name="radGridView" IsReadOnly="True" SelectionMode="Single" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Parts}"
+        <telerik:RadGridView x:Name="dataGrid" IsReadOnly="True" SelectionMode="Single" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Parts}"
                              MouseDoubleClick="RadGridView_OnMouseDoubleClick">
         </telerik:RadGridView>
     </Grid>
