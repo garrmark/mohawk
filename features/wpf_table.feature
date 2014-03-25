@@ -15,6 +15,6 @@ Feature: Working with WPF DataGrid
       | XX123  | Test Part 1 | 5        |
     Then the WPF grid row with index "0" should be selected
 
-  Scenario: Double click a row
-    When we double click on a WPF grid row value "ZZ34334"
-    Then a dialog box should show with the part id "ZZ34334"
+#  Scenario: Double click a row
+#    When we double click on a WPF grid row value "ZZ34334"
+#    Then a dialog box should show with "ZZ34334"

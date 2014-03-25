@@ -17,9 +17,9 @@ end
 
 
 When(/^we double click on a WPF grid row value "([^"]*)"$/) do |arg|
-  pending
+  on(WpfGrid).select_parts(partid: arg).invoke
 end
 
-Then(/^a dialog box should show with the part "([^"]*)"$/) do |arg|
+Then(/^a dialog box should show with "([^"]*)"$/) do |arg|
   on(MessageBox).part.should equal arg
 end
